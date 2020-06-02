@@ -1,6 +1,23 @@
 import React from 'react';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
+import PageHeader from './components/PageHeader';
 import logo from './logo.svg';
 import './App.css';
+
+class App3 extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navigation/>
+        <PageHeader/>
+        <MainContent/>
+        <Footer/>
+      </div>
+    );
+  }
+}
 
 function App() {
   return (
@@ -142,6 +159,6 @@ class StateTest extends React.Component {
 }
 
 //export default PropsTest;
-export default StateTest;
-//export default App;
+//export default StateTest;
+export default App3;
 //export default Main;
